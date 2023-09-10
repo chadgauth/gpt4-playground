@@ -49,25 +49,26 @@ export default function ChatInput({}: Props) {
   }, [handleSubmit]);
 
   return (
-    <div className="fixed bottom-0 flex h-40 w-full bg-gradient-to-t from-[rgb(var(--bg-secondary))] to-transparent md:w-[calc(100%-260px)]">
+    <div className="fixed bottom-0 flex h-40 w-full bg-stone-300 md:w-[calc(100%-260px)]">
       <form
         className="mx-auto flex h-full w-full max-w-4xl items-end justify-center p-4 pb-10"
         onSubmit={handleSubmit}
       >
-        <div className="relative flex w-full flex-row rounded border border-stone-500/20 bg-tertiary shadow-xl">
+        <div className="relative flex w-full flex-row rounded border border-gray-300 bg-white shadow-xl">
           <textarea
             ref={textAreaRef}
-            className="max-h-[200px] w-full resize-none border-none bg-tertiary p-4 text-primary outline-none"
+            className="max-h-[200px] w-full resize-none border-none bg-white p-4 text-black outline-none"
             onChange={handleChange}
             value={input}
             rows={1}
+            placeholder="Ask something about the resume..."
           />
           <button
             type="submit"
-            className="rounded p-4 text-primary hover:bg-primary/50"
+            className="rounded p-4 text-black hover:bg-gray-200"
           >
             {loading ? (
-              <div className="mx-auto h-5 w-5 animate-spin rounded-full border-b-2 border-white" />
+              <div className="mx-auto h-5 w-5 animate-spin rounded-full border-b-2 border-gray-300" />
             ) : (
               <MdSend />
             )}

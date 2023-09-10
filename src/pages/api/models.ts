@@ -1,6 +1,6 @@
-import { OpenAIChatModels } from "@/utils/OpenAI";
+import { OpenAIChatModels, OpenAIModel } from "@/utils/OpenAI";
 import type { NextApiRequest, NextApiResponse } from "next";
-import { OpenAIApi, Configuration } from "openai";
+import { OpenAI } from "openai";
 
 export default async function handler(
   req: NextApiRequest,
@@ -11,25 +11,28 @@ export default async function handler(
     return res.status(401).json({ error: "Missing token" });
   }
 
-  const configuration = new Configuration({
+  const openAi = new OpenAI({
     apiKey,
   });
 
-  const openAi = new OpenAIApi(configuration);
-
   try {
-    const {
-      data: { data },
-    } = await openAi.listModels();
+    const { data } = await openAi.models.list();
+  const models = data.map<Record<string, OpenAIModel>>(({ id }) => ({ id: id }));
 
     // Get the list of models
-    const models = data.map(({ id }) => id);
+
+    //const models = data.map<Record<string, OpenAIModel>>(({ id }) => [id]: { id: id });
 
     // Get the models that can interface with the chat API and return
-    const chatModels = models
-      .filter((model) => model in OpenAIChatModels)
-      .map((model) => OpenAIChatModels[model as keyof typeof OpenAIChatModels])
-      .sort((a, b) => (b.maxLimit || 0) - (a.maxLimit || 0)); // Sort by max limit
+    // Assuming data is your Model array
+  const chatModels = data.map<OpenAIModel>(({ id, maxLimit }) => {
+      return {
+          id: id,
+          name: id, // Replace with actual value
+          maxLimit,    // Replace with actual value
+      };
+  });
+
 
     return res.status(200).json({
       models,

@@ -12,18 +12,21 @@ import {
   OpenAIChatMessage,
   OpenAIConfig,
   OpenAISystemMessage,
-  OpenAIChatModels
+  OpenAIChatModels,
 } from "@/utils/OpenAI";
 import React, { PropsWithChildren, useCallback, useEffect } from "react";
 import { useRouter } from "next/router";
 import { useAuth } from "@/context/AuthProvider";
+import experiences from "./experiences.json";
 
 const CHAT_ROUTE = "/";
 
 const defaultContext = {
   systemMessage: {
     role: "system",
-    content: "You are a helpful AI chatbot.",
+    content: `You are an AI version of my resume. Here are my roles: ${experiences
+      .map((e) => e.title)
+      .join(", ")}.`,
   } as OpenAISystemMessage,
   messages: [] as OpenAIChatMessage[],
   config: defaultConfig as OpenAIConfig,
@@ -139,7 +142,6 @@ export default function OpenAIProvider({ children }: PropsWithChildren) {
         ...newConfig,
       };
     });
-
   };
 
   const updateMessageContent = (id: number, content: string) => {

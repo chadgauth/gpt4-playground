@@ -69,9 +69,9 @@ export default function ChatMessages({}: Props) {
   }, [submit]);
 
   return (
-    <div className="flex h-full w-full flex-col items-stretch md:pl-[260px]">
+    <div className="flex h-full w-full flex-col items-stretch bg-stone-300 text-black md:pl-[260px]">
       <div
-        className="relative flex flex-1 flex-col items-stretch overflow-auto border-b bg-tertiary pb-[10rem] scrollbar scrollbar-w-3 scrollbar-thumb-[rgb(var(--bg-primary))] scrollbar-track-[rgb(var(--bg-secondary))] scrollbar-thumb-rounded-full"
+        className="relative flex flex-1 flex-col items-stretch overflow-auto border-b bg-stone-300 pb-[10rem] scrollbar scrollbar-track-black scrollbar-thumb-green-500 scrollbar-thumb-rounded-full scrollbar-w-3"
         ref={messageContainer}
       >
         {messages.length === 0 ? (
@@ -81,7 +81,7 @@ export default function ChatMessages({}: Props) {
             {messages.map((message) => (
               <ChatMessage key={message.id} message={message} />
             ))}
-            <hr className="border-b border-stone-400/20" />
+            <hr className="border-b border-green-500/20" />
           </>
         )}
       </div>

@@ -11,7 +11,7 @@ export default function SystemMessage({}: Props) {
     <TextArea
       title="System"
       className="grow"
-      placeholder="You are a helpful assistant."
+      placeholder="You are an AI version of Chad Gauthier's resume."
       value={systemMessage.content}
       onChange={(e) => updateSystemMessage(e.target.value)}
     />

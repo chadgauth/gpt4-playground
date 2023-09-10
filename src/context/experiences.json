@@ -1,0 +1,140 @@
+[
+    {
+        "title": "Senior Software Engineer and Team Lead at CrowdStreet",
+        "achievements": [
+            {
+                "task": "Transitioned class to functional components and JavaScript to TypeScript",
+                "impact": "Promoted code consistency and improved development practices through code reviews"
+            },
+            {
+                "task": "Implemented Microsoft B2C OAuth with React front-end and Graph API on the backend",
+                "impact": "Enhanced security and user data management"
+            },
+            {
+                "task": "Implemented NX monorepo tools and shell scripts",
+                "impact": "Significant time savings for developers and anticipated annual cost savings of over $300K"
+            },
+            {
+                "task": "Developed an agile approach for handling unplanned capital calls",
+                "impact": "Efficient resource allocation, cost savings, and successful project completion within budget and ahead of schedule"
+            },
+            {
+                "task": "Introduced strategic separation of libraries in React monorepo",
+                "impact": "Reduced code duplication and inefficient circular dependencies"
+            },
+            {
+                "task": "Implemented comprehensive unit test coverage during refactors",
+                "impact": "Led to discovery of dozens of bugs and reducing code duplication and complexity"
+            }
+        ],
+        "skills": ["React", "TypeScript", "OAuth", "NX", "Agile", "Codebase Optimization", "Quality Assurance"]
+    },
+    {
+        "title": "Associate Lead Consultant at Cognizant Softvision",
+        "achievements": [
+            {
+                "task": "Developed complex and high-performance Angular applications",
+                "impact": "Met client requirements and drove the delivery of insurance solutions"
+            },
+            {
+                "task": "Contributed to the development and integration of business data models into Angular applications",
+                "impact": "Enhanced the team's data-driven decision-making capabilities"
+            },
+            {
+                "task": "Participated in SEO discussions and provided guidance on optimizing Angular applications",
+                "impact": "Improved search engine rankings and product visibility"
+            }
+        ],
+        "skills": ["Angular", "Data-Driven Decisions", "SEO Optimization"]
+    },
+    {
+        "title": "IT Applications Developer Senior at Progressive Insurance",
+        "achievements": [
+            {
+                "task": "Led the design and implementation of a full-stack AWS Elasticache solution",
+                "impact": "Delivered a scalable and reusable feature for asynchronous data updates"
+            },
+            {
+                "task": "Standardized the team's approach and provided coaching",
+                "impact": "Enabled developers to deliver high-quality web work"
+            },
+            {
+                "task": "Mentored a summer intern in Angular Redux patterns and Node.js",
+                "impact": "Resulted in excellent feedback and a full-time offer"
+            }
+        ],
+        "skills": ["Architectural Leadership", "Team Standardization", "Intern Mentorship", "Angular", "Redux", "Node.js"]
+    },
+    {
+        "title": "IT Applications Developer Mid-Level at Progressive Insurance",
+        "achievements": [
+            {
+                "task": "Developed a photo viewer application",
+                "impact": "Saved 130 employee hours per day within a two-month Agile rapid release cycle"
+            },
+            {
+                "task": "Delivered an interactive CSS crash course",
+                "impact": "Earned recognition as the CSS guru and strengthened team capabilities"
+            }
+        ],
+        "skills": ["Agile Development", "Rapid Prototyping", "CSS"]
+    },
+    {
+        "title": "IT Applications Developer Associate at Progressive Insurance",
+        "achievements": [
+            {
+                "task": "Collaborated with designers to replace a flash-based web app",
+                "impact": "Enhanced user experience for Progressive's quoting website with ASP.NET MVC4, SCSS, and HTML"
+            }
+        ],
+        "skills": ["User Experience Enhancement", "ASP.NET MVC4", "SCSS", "HTML"]
+    },
+    {
+        "title": "ITLP Intern/Co-Op at General Electric",
+        "achievements": [
+            {
+                "task": "Developed and designed a customer web portal with responsive CSS and Ruby on Rails",
+                "impact": "Improved ease of use and accessibility across devices"
+            },
+            {
+                "task": "Trained under a Japanese Lean Sensei",
+                "impact": "Gained insights into lean tools and efficient floor operations"
+            }
+        ],
+        "skills": ["Web Portal Development", "Responsive CSS", "Ruby on Rails", "Lean Insights"]
+    },
+    {
+        "title": "Computer Science Tutor at Gannon University",
+        "achievements": [
+            {
+                "task": "Provided tutoring and mentorship to struggling computer science students",
+                "impact": "Helped them build a strong foundation in software development concepts and practices"
+            }
+        ],
+        "skills": ["Student Mentorship", "Tutoring"]
+    },
+    {
+        "title": "Miscellaneous Web Development at Gannon University",
+        "achievements": [
+            {
+                "task": "Created and developed WordPress-based web pages for friends and individual clients",
+                "impact": "Incorporated features such as contact forms, photo galleries, and online presence"
+            },
+            {
+                "task": "Led a comprehensive redesign of a member organization's website using WordPress",
+                "impact": "Resulted in over 2x increase in page traffic and a 3x boost in conversion"
+            }
+        ],
+        "skills": ["CMS", "Wordpress", "Web Development"]
+    },
+    {
+        "title": "Assistant System Admin at Gannon University",
+        "achievements": [
+            {
+                "task": "Troubleshot and resolved hardware, software, and network issues",
+                "impact": "Ensured seamless system operations and user experience"
+            }
+        ],
+        "skills": ["IT Troubleshooting"]
+    }
+]
